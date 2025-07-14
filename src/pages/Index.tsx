@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Zap,
   Mail,
@@ -58,6 +59,7 @@ const Index = () => {
               <button onClick={() => scrollToSection('how-it-works')} className="text-foreground/80 hover:text-primary transition-colors">Docs</button>
               <button onClick={() => scrollToSection('pricing')} className="text-foreground/80 hover:text-primary transition-colors">Pricing</button>
               <Button variant="outline" size="sm">Dashboard</Button>
+              <ThemeToggle />
             </div>
           </div>
         </div>
